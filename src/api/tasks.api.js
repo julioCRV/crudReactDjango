@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const taskApi = axios.create({
-    baseURL: 'http://localhost:8000/tareas/api/v1/tareas/'
+    baseURL: 'https://backen-prueba.onrender.com/tareas/api/v1/'
 });
 
 export const getAllTasks = () => taskApi.get("/");
